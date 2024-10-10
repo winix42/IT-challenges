@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinart - show your art </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family:'Montserrat', sans-serif;
+            background-color: #FAFAFA; 
+            color: #333;
+            line-height: 1.6;
+
+
+        }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #A786DF; 
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    
+    .hero {
+      background: linear-gradient(to right, #A786DF, #b35c5c);
+      color: white;
+      text-align: center;
+      padding: 6rem 0;
+      margin-bottom: 3rem;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero .cta {
+      padding: 12px 28px;
+      background-color: #E9C46A; 
+      color: #333;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .hero .cta:hover {
+      background-color: #D4AC52;
+      transform: translateY(-3px);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 10%;
+    }
+
+    .gallery-item {
+      background-color: white;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-bottom: 4px solid #A786DF;
+    }
+
+    .gallery-item .item-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .gallery-item .item-info h3 {
+      font-size: 1.4rem;
+      color: #A786DF;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .gallery-item .item-info p {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .gallery-item .button {
+      display: inline-block;
+      padding: 8px 20px;
+      background-color: #926d7b; 
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .gallery-item .button:hover {
+      background-color: #E85B52;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #FF6F61;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Pinart</h1>
+    <p>A Soft Place to Share Beautiful Art</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Pinart</h2>
+    <p>Your home to share and explore stunning artwork</p>
+    <button class="cta">Join the Community</button>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <!-- Sample Art Item -->
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/564x/61/d2/a9/61d2a969857212a1f71e0f85bb2c0f7c.jpg" alt="Artwork 1">
+<div class="item-info">
+    <h3> photography</h3>
+    <p>Artist: sarah Laoudi</p>
+    <a href="#" class="button">View More</a>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.pinimg.com/236x/d0/49/cc/d049ccbcfb7a60b6ae2d26757fe98cf8.jpg" alt="Artwork 2">
+  <div class="item-info">
+    <h3>drawing</h3>
+    <p>Artist: someone </p>
+    <a href="#" class="button">View More</a>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.pinimg.com/236x/7d/2d/f9/7d2df944c5e405bea116bb79180b3d49.jpg" alt="Artwork 3">
+  <div class="item-info">
+    <h3>painting</h3>
+    <p>Artist: unknown </p>
+    <a href="#" class="button">View More</a>
+  </div>
+</div>
+
+<div class="gallery-item">
+    <img src="https://i.pinimg.com/236x/85/ec/b7/85ecb7dec9b24d08538b156df65f29d6.jpg" alt="Artwork 3">
+    <div class="item-info">
+      <h3>Sketching</h3>
+      <p>Artist: unknown</p>
+      <a href="#" class="button">View More</a>
+    </div>
+  </div>
+
+<div class="gallery-item">
+    <img src="https://i.pinimg.com/564x/c7/b3/0e/c7b30eaaa018d8615b089d8c987125ac.jpg" alt="Artwork 3">
+    <div class="item-info">
+      <h3>painting</h3>
+      <p>Artist: kach wahed</p>
+      <a href="#" class="button">View More</a>
+   </div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://i.pinimg.com/236x/81/10/0b/81100b2e0c2a3c872ac6c3e0e278878f.jpg" alt="Artwork 3">
+    <div class="item-info">
+      <h3>Sketching</h3>
+      <p>Artist: bnadem</p>
+      <a href="#" class="button">View More</a>
+   </div>
+  </div>
+
+<div class="gallery-item">
+    <img src="https://i.pinimg.com/236x/74/2e/a8/742ea8539b69545ab2e321842f447951.jpg" alt="Artwork 3">
+    <div class="item-info">
+      <h3>photography</h3>
+      <p>Artist: someone</p>
+      <a href="#" class="button">View More</a>
+   </div>
+  </div>
+
+<div class="gallery-item .button">
+
+    <div class="item-info">
+      <a href="#" class="button"> add yours</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+<p>&copy; Pinart | <a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
